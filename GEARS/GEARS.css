@@ -1,0 +1,127 @@
+@charset "utf-8";/* CSS Document */
+
+ body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+       .header {
+    background-color: #000;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 900; 
+    transition: top 0.3s;
+}
+
+.header img {
+    height: 75px; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+		
+		.left-ad {
+            float: left;
+            margin-right: 0px;
+        }
+
+.highlight-text {
+	font-size: 9em;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	letter-spacing: 6px;
+	text-align: center;
+	margin-top: 30px;
+	font-style: italic;
+        }
+
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 15px;
+	font-size: 18px;
+    }
+    th {
+	background-color: #000000;
+    }
+  img {
+      max-width: 250px; 
+      height: auto;
+    }
+
+
+
+
+
+footer {
+            background-color: #333;
+            color: white;
+            padding: 1px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 50px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer .footer-left {
+            text-align: left;
+            float: left;
+            margin-left: 20px; 
+        }
+        footer .footer-right {
+            text-align: right;
+            float: right;
+            margin-right: 20px; 
+        }
+     
+        footer img {
+            height: 45px; 
+            width: auto;
+            margin: 0 5px;
+        }

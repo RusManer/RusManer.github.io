@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<link href="for.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <div class="contenedor-formulario">
+    <form class="contact-form" onsubmit="return enviarFormulario(event)">
+      <h1>¡Gracias por visitar nuestra página web!</h1>
+      <p>Nos gustaría conocer tu opinión para mejorar tu experiencia.</p>
+
+      <h2>Calificación general</h2>
+      <label for="calificacion">¿Cómo califica su experiencia general en nuestra página web?</label>
+      <select id="calificacion" name="calificacion" required>
+        <option value="muy_buena">Muy buena</option>
+        <option value="buena">Buena</option>
+        <option value="regular">Regular</option>
+        <option value="mala">Mala</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault(); 
+            alert('Los datos han sido enviados con éxito.'); 
+             return true; 
+        }
+    </script>
+</body>
+</html>
